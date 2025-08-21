@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_home"     android:title="Trang chủ" android:icon="@drawable/ic_home_24"/>
-    <item android:id="@+id/nav_products" android:title="Sản phẩm"  android:icon="@drawable/ic_grid_24"/>
-    <item android:id="@+id/nav_cart"     android:title="Hồ sơ"      android:icon="@drawable/ic_profile_24"/>
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_24"
+        android:title="Trang chủ" />
+
+    <item
+        android:id="@+id/nav_products"
+        android:icon="@drawable/ic_grid_24"
+        android:title="Sản phẩm" />
+
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/outline_add_shopping_cart_24"
+        android:title="Giỏ hàng" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile_24"
+        android:title="Hồ sơ" />
 </menu>

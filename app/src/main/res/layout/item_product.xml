@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imgProduct"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="140dp"
         android:scaleType="centerCrop"
         android:src="@drawable/prod_1" />
 
@@ -20,7 +20,9 @@
         android:layout_height="wrap_content"
         android:text="Tên sản phẩm"
         android:textStyle="bold"
-        android:textSize="14sp"
+        android:textSize="15sp"
+        android:ellipsize="end"
+        android:maxLines="1"
         android:layout_marginTop="8dp" />
 
     <TextView
@@ -29,12 +31,38 @@
         android:layout_height="wrap_content"
         android:text="45.000đ"
         android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:textSize="14sp"
         android:layout_marginTop="2dp"/>
 
-    <Button
-        android:id="@+id/btnAddToCart"
+    <!-- Hàng nút -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="THÊM VÀO GIỎ"
-        android:layout_marginTop="8dp"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- THÊM VÀO GIỎ -->
+        <ImageButton
+            android:id="@+id/btnAddToCart"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:src="@drawable/outline_add_shopping_cart_24"
+
+            android:backgroundTint="#6A1B9A"
+            android:contentDescription="Thêm vào giỏ" />
+
+        <!-- CHI TIẾT -->
+        <ImageButton
+            android:id="@+id/btnDetail"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/ic_menu_info_details"
+
+            android:backgroundTint="#00796B"
+            android:contentDescription="Chi tiết" />
+    </LinearLayout>
 </LinearLayout>

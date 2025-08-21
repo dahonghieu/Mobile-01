@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="64dp" android:layout_height="64dp"
+        android:scaleType="centerCrop" android:src="@drawable/prod_1"/>
+
+    <LinearLayout
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tên" android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="0đ" android:textColor="#E91E63"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="x1" android:layout_marginEnd="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="36dp" android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_delete"
+
+        android:backgroundTint="#D32F2F"/>
+</LinearLayout>

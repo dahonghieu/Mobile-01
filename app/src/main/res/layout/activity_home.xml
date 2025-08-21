@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F5F5F5"
     tools:context=".HomeActivity">
 
     <!-- Thanh tìm kiếm -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#2196F3"
-        android:padding="8dp"
+        android:background="#2E7D32"
+        android:padding="10dp"
         android:gravity="center_vertical">
 
         <ImageView
@@ -28,11 +29,12 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:hint="Tìm kiếm..."
+            android:hint="Tìm kiếm đồ uống..."
             android:background="@drawable/bg_search_white"
             android:drawableStart="@drawable/ic_search_24"
             android:drawablePadding="8dp"
             android:paddingStart="8dp"
+            android:textSize="14sp"
             android:singleLine="true"
             android:imeOptions="actionSearch" />
     </LinearLayout>
@@ -43,7 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/banner" />
+        android:src="@drawable/banner"
+        android:contentDescription="Banner" />
 
     <!-- Tiêu đề danh mục -->
     <TextView
@@ -52,13 +55,14 @@
         android:text="Danh mục"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="#2E7D32"
         android:padding="12dp" />
 
     <!-- Danh mục ngang -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCategory"
         android:layout_width="match_parent"
-        android:layout_height="86dp"
+        android:layout_height="110dp"
         android:paddingStart="12dp"
         android:paddingEnd="4dp"
         android:clipToPadding="false"
@@ -68,9 +72,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sản phẩm"
+        android:text="Sản phẩm nổi bật"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="#2E7D32"
         android:padding="12dp" />
 
     <!-- Lưới sản phẩm -->
@@ -80,6 +85,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="12dp"
+        android:clipToPadding="false"
         android:nestedScrollingEnabled="false"
         tools:listitem="@layout/item_product" />
 
@@ -89,8 +95,9 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@android:color/white"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
         app:menu="@menu/menu_bottom"
-
         app:labelVisibilityMode="labeled" />
 
 </LinearLayout>
