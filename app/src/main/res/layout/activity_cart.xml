@@ -34,7 +34,14 @@
         android:layout_weight="1"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"/>
-
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Thanh toán"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00796B"
+        android:layout_margin="12dp"/>
     <!-- Nút quay về trang chủ -->
     <Button
         android:id="@+id/btnBackHome"
@@ -43,4 +50,6 @@
         android:text="Tiếp tục mua sắm"
         android:textAllCaps="false"
         android:layout_margin="12dp"/>
+
+
 </LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp" android:background="#FFFFFF"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Thanh toán" android:textStyle="bold" android:textSize="20sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false"/>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tổng: 0đ" android:textStyle="bold" android:textSize="18sp"
+            android:layout_marginTop="8dp" android:textColor="#D32F2F"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:hint="Họ tên" android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:hint="Số điện thoại" android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:hint="Địa chỉ nhận hàng"/>
+
+        <RadioGroup
+            android:id="@+id/rgMethod"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="8dp">
+            <RadioButton
+                android:id="@+id/rbCOD"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="COD" android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rbOnline"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Online" android:layout_marginStart="24dp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent" android:layout_height="50dp"
+            android:text="ĐẶT HÀNG"
+            android:textAllCaps="true" android:textColor="@android:color/white"
+            android:backgroundTint="#2E7D32" android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
